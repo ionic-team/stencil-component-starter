@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'webcomponent',
+  namespace: 'myname',
   generateDistribution: true,
   generateWWW: false,
   bundles: [

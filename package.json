@@ -1,13 +1,14 @@
 {
-  "name": "my-web-component",
+  "name": "my-name",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
-    "dist"
+    "dist/"
   ],
+  "browser": "dist/myname.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",

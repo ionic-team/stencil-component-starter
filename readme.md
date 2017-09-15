@@ -41,7 +41,7 @@ npm run build
 ## Using this component
 To use this component in your project, no matter what framework you are using, follow these steps:
 
-- Publish to NPM
-- Put a script tag similar to this `<script async defer src='https://unpkg.com/my-name@0.1.1/dist/myname.js'></script>` in your index.html
+- [Publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+- Put a script tag similar to this `<script async defer src='https://unpkg.com/my-name@0.0.1/dist/myname.js'></script>` in your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
