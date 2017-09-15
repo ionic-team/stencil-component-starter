@@ -38,6 +38,8 @@ To build the component for production, run:
 npm run build
 ```
 
+Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
+
 ## Using this component
 To use this component in your project, no matter what framework you are using, follow these steps:
 
