@@ -41,9 +41,19 @@ npm run build
 Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
 
 ## Using this component
-To use this component in your project, no matter what framework you are using, follow these steps:
+
+### Script tag
 
 - [Publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-- Put a script tag similar to this `<script async defer src='https://unpkg.com/my-name@0.0.1/dist/myname.js'></script>` in your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/my-name@0.0.1/dist/myname.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
+### Node Modules
+- Run `npm install my-name --save`
+- Put a script tag similar to this `<script src='node_modules/my-name/dist/myname.js></script>` in the head of your index.html
+- Then you can use the element anywhere in your template, JSX, html etc
+
+### In a stencil-starter app
+- Run `npm install my-name --save`
+- Add `{ name: 'my-name' }` to your [collections](https://github.com/ionic-team/stencil-starter/blob/master/stencil.config.js#L5)
+- Then you can use the element anywhere in your template, JSX, html etc
