@@ -16,7 +16,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next"
+    "@stencil/core": "0.0.6-0"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
