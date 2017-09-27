@@ -6,24 +6,10 @@
   <title>Stencil Component Starter</title>
   <script src="/build/myname.js"></script>
 
-  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
-
 </head>
 <body>
 
   <my-name first="Stencil" last="JS"></my-name>
-
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      // auto-unregister service worker during dev mode
-      navigator.serviceWorker.ready.then(registration => {
-        registration.unregister().then(() => {
-          location.reload(true);
-        });
-      });
-    }
-  </script>
 
 </body>
 </html>
