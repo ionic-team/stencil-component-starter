@@ -14,10 +14,11 @@
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.0.6-4"
+    "@stencil/core": "next"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
