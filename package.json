@@ -17,7 +17,7 @@
     "test": "jest --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "next"
+    "@stencil/core": "0.0.6-5"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
