@@ -1,6 +1,5 @@
 import { Component, Prop } from '@stencil/core';
 
-
 @Component({
   tag: 'my-name',
   styleUrl: 'my-name.scss'
@@ -8,7 +7,6 @@ import { Component, Prop } from '@stencil/core';
 export class MyName {
 
   @Prop() first: string;
-
   @Prop() last: string;
 
   render() {
