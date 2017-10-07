@@ -19,7 +19,7 @@ describe('my-name', () => {
       expect(element.textContent).toEqual('Hello, my name is  ');
     });
 
-    it('should work a first name', async () => {
+    it('should work with a first name', async () => {
       element.first = 'Peter';
       await flush(element);
       expect(element.textContent).toEqual('Hello, my name is Peter ');
