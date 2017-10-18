@@ -2,6 +2,11 @@
 
 # Stencil Component Starter
 
+This is a starter project for building a standalone Web Component using Stencil.
+
+Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+
+# Stencil
 
 Stencil is a compiler for building fast web apps using Web Components.
 
