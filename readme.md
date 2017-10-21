@@ -2,6 +2,11 @@
 
 # Stencil Component Starter
 
+This is a starter project for building a standalone Web Component using Stencil.
+
+Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+
+# Stencil
 
 Stencil is a compiler for building fast web apps using Web Components.
 
@@ -14,8 +19,8 @@ Stencil components are just Web Components, so they work in any major framework 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-web-component
-cd my-web-component
+git clone https://github.com/ionic-team/stencil-component-starter.git my-component
+cd my-component
 git remote rm origin
 ```
 

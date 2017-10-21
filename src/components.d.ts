@@ -4,31 +4,33 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import { MyName as MyName } from './components/my-name/my-name';
+import { MyComponent as MyComponent } from './components/my-component/my-component';
 
-interface HTMLMyNameElement extends MyName, HTMLElement {
+interface HTMLMyComponentElement extends MyComponent, HTMLElement {
 }
-declare var HTMLMyNameElement: {
-  prototype: HTMLMyNameElement;
-  new (): HTMLMyNameElement;
+declare var HTMLMyComponentElement: {
+  prototype: HTMLMyComponentElement;
+  new (): HTMLMyComponentElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "my-component": HTMLMyComponentElement;
   }
   interface ElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "my-component": HTMLMyComponentElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "my-name": JSXElements.MyNameAttributes;
+          "my-component": JSXElements.MyComponentAttributes;
       }
   }
   namespace JSXElements {
-      export interface MyNameAttributes extends HTMLAttributes {
+      export interface MyComponentAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
-          first?: any,
-          last?: any
+          first?: string,
+          last?: string
       }
   }
 }

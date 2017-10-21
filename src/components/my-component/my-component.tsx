@@ -1,10 +1,10 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'my-name',
-  styleUrl: 'my-name.scss'
+  tag: 'my-component',
+  styleUrl: 'my-component.scss'
 })
-export class MyName {
+export class MyComponent {
 
   @Prop() first: string;
   @Prop() last: string;
@@ -12,7 +12,7 @@ export class MyName {
   render() {
     return (
       <div>
-        Hello, my name is {this.first} {this.last}
+        Hello, World! I'm {this.first} {this.last}
       </div>
     );
   }
