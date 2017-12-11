@@ -1,5 +1,5 @@
 {
-  "name": "my-name",
+  "name": "my-component",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/collection/index.js",
