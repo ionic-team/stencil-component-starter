@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'my-components',
   generateDistribution: true,
   bundles: [
     { components: ['my-component'] }
