@@ -1,0 +1,12 @@
+import { BuildConfig, BuildContext, BuildResults, ComponentData, Manifest, ManifestData, ModuleFile } from '../../util/interfaces';
+export declare function writeAppManifest(config: BuildConfig, ctx: BuildContext, buildResults: BuildResults): void;
+export declare function serializeAppManifest(config: BuildConfig, manifestDir: string, manifest: Manifest): ManifestData;
+export declare function parseDependentManifest(config: BuildConfig, collectionName: string, manifestDir: string, manifestJson: string): Manifest;
+export declare function excludeFromCollection(config: BuildConfig, cmpData: ComponentData): boolean;
+export declare function serializeComponent(config: BuildConfig, manifestDir: string, moduleFile: ModuleFile): ComponentData;
+export declare function parseComponentDataToModuleFile(config: BuildConfig, manifestDir: string, cmpData: ComponentData): ModuleFile;
+export declare function serializeBundles(config: BuildConfig, manifestData: ManifestData): void;
+export declare function parseBundles(manifestData: ManifestData, manifest: Manifest): void;
+export declare function serializeAppGlobal(config: BuildConfig, manifestDir: string, manifestData: ManifestData, manifest: Manifest): void;
+export declare function parseGlobal(config: BuildConfig, manifestDir: string, manifestData: ManifestData, manifest: Manifest): void;
+export declare const COLLECTION_DEPENDENCIES_DIR = "dependencies";

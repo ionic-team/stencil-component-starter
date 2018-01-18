@@ -1,0 +1,16 @@
+export declare function isDef(v: any): boolean;
+export declare function isUndef(v: any): boolean;
+export declare function isArray(v: any): v is Array<any>;
+export declare function isObject(v: any): v is Object;
+export declare function isBoolean(v: any): v is (boolean);
+export declare function isString(v: any): v is (string);
+export declare function isNumber(v: any): v is (number);
+export declare function isFunction(v: any): v is (Function);
+export declare function toDashCase(str: string): string;
+export declare function toTitleCase(str: string): string;
+export declare function dashToPascalCase(word: string): string;
+export declare function noop(): any;
+export declare function pointerCoordX(ev: any): number;
+export declare function pointerCoordY(ev: any): number;
+export declare function getElementReference(elm: any, ref: string): any;
+export declare function getParentElement(elm: any): any;

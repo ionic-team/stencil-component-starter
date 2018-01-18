@@ -1,0 +1,10 @@
+import { Bundle, ComponentMeta, ComponentRegistry, LoadComponentRegistry, ModuleFile, StylesMeta } from './interfaces';
+export declare function formatLoadComponentRegistry(cmpMeta: ComponentMeta): LoadComponentRegistry;
+export declare function formatStyles(styleMeta: StylesMeta): any;
+export declare function formatComponentRegistry(registry: ComponentRegistry): LoadComponentRegistry[];
+export declare function formatLoadComponents(namespace: string, moduleId: string, moduleBundleOutput: string, moduleFiles: ModuleFile[]): string;
+export declare function formatComponentMeta(cmpMeta: ComponentMeta): string;
+export declare function formatJsBundleFileName(jsBundleId: string): string;
+export declare function formatCssBundleFileName(cssBundleId: string): string;
+export declare function getBundledModulesId(bundle: Bundle): string;
+export declare function generateBundleId(tags: string[]): string;
