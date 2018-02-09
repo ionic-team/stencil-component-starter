@@ -1,9 +1,6 @@
 exports.config = {
   namespace: 'mycomponent',
-  generateDistribution: true,
-  bundles: [
-    { components: ['my-component'] }
-  ]
+  generateDistribution: true
 };
 
 exports.devServer = {
