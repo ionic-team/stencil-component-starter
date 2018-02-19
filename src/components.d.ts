@@ -5,12 +5,21 @@
  */
 
 
+declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
 import {
   MyComponent as MyComponent
 } from './components/my-component/my-component';
 
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLElement {
+  interface HTMLMyComponentElement extends MyComponent, HTMLStencilElement {
   }
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
@@ -35,3 +44,4 @@ declare global {
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }
