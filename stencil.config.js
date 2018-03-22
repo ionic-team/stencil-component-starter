@@ -1,7 +1,6 @@
 exports.config = {
   namespace: 'mycomponent',
-  generateDistribution: true,
-  serviceWorker: false
+  outputTargets:[{type: 'dist'}]
 };
 
 exports.devServer = {

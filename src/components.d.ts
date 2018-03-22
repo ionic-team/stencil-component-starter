@@ -13,6 +13,8 @@ declare global {
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
     componentOnReady(done: (ele?: this) => void): void;
+
+    forceUpdate(): void;
   }
 
   interface HTMLAttributes {}
@@ -31,20 +33,21 @@ declare global {
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    'my-component': HTMLMyComponentElement;
   }
   interface ElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    'my-component': HTMLMyComponentElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-component": JSXElements.MyComponentAttributes;
+      'my-component': JSXElements.MyComponentAttributes;
     }
   }
   namespace JSXElements {
     export interface MyComponentAttributes extends HTMLAttributes {
-      first?: string;
-      last?: string;
+      'first'?: string;
+      'last'?: string;
+      
     }
   }
 }
