@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/mycomponent.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
