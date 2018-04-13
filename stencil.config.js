@@ -1,8 +1,13 @@
 exports.config = {
   namespace: 'mycomponent',
   outputTargets:[
-    { type: 'dist' },
-    { type: 'www' }
+    { 
+      type: 'dist' 
+    },
+    { 
+      type: 'www',
+      serviceWorker: false
+    }
   ]
 };
 
