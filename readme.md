@@ -74,5 +74,5 @@ Instead, use a prefix that fits your company or any name for a group of related 
 
 ### In a stencil-starter app
 - Run `npm install my-component --save`
-- Add `{ name: 'my-component' }` to your [collections](https://github.com/ionic-team/stencil-starter/blob/master/stencil.config.js#L5)
+- Add an import to the npm packages `import my-component;`
 - Then you can use the element anywhere in your template, JSX, html etc
