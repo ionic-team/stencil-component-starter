@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { MyComponent } from './my-component';
 
 describe('my-component', () => {
@@ -7,34 +7,43 @@ describe('my-component', () => {
   });
 
   describe('rendering', () => {
-    let element;
+    let window : TestWindow;
+    let element : HTMLMyComponentElement;
+
     beforeEach(async () => {
-      element = await render({
-        components: [MyComponent],
-        html: '<my-component></my-component>'
+      window = new TestWindow();
+      await window.load({
+        html: '<my-component></my-component>',
+        components: [MyComponent]
       });
+      element = window.document.querySelector('my-component');
     });
 
-    it('should work without parameters', () => {
+    it('should work without parameters', async () => {
+      await window.flush();
+
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m');
     });
 
     it('should work with a first name', async () => {
-      element.first = 'Peter';
-      await flush(element);
+      element.first= 'Peter';
+      await window.flush();
+
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter');
     });
 
     it('should work with a last name', async () => {
-      element.last = 'Parker';
-      await flush(element);
+      element.last= 'Parker';
+      await window.flush();
+
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m  Parker');
     });
 
     it('should work with both a first and a last name', async () => {
-      element.first = 'Peter'
-      element.last = 'Parker';
-      await flush(element);
+      element.first= 'Peter';
+      element.last= 'Parker';
+      await window.flush();
+
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter Parker');
     });
   });
