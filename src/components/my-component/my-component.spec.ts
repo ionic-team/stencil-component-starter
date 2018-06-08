@@ -34,7 +34,7 @@ describe('my-component', () => {
     });
 
     it('should work with both a first and a last name', async () => {
-      element.first = 'Peter'
+      element.first = 'Peter';
       element.last = 'Parker';
       await testWindow.flush();
       expect(element.textContent.trim()).toEqual('Hello, World! I\'m Peter Parker');
