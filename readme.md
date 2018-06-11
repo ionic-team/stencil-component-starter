@@ -21,7 +21,7 @@ To start building a new web component using Stencil, clone this repo to a new di
 ```bash
 git clone https://github.com/ionic-team/stencil-component-starter.git my-component
 cd my-component
-git remote rm origin
+rm -rf .git
 ```
 
 and run:
