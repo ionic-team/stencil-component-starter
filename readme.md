@@ -31,12 +31,6 @@ npm install
 npm start
 ```
 
-To watch for file changes during develop, run:
-
-```bash
-npm run dev
-```
-
 To build the component for production, run:
 
 ```bash
