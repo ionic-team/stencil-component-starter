@@ -2,27 +2,24 @@
   "name": "my-component",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
-  "main": "dist/mycomponent.js",
-  "types": "dist/types/index.d.ts",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/mycomponent.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
-    "start": "npm run dev",
+    "start": "stencil build --dev --watch --serve",
     "test": "jest --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {
-    "@stencil/core": "^0.7.19"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
+    "@stencil/core": "^0.10.0",
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1"
   },
