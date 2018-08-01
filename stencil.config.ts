@@ -1,4 +1,6 @@
-exports.config = {
+import { Config } from '@stencil/core';
+
+export const config: Config = {
   namespace: 'mycomponent',
   outputTargets:[
     {
@@ -6,7 +8,7 @@ exports.config = {
     },
     {
       type: 'www',
-      serviceWorker: false
+      serviceWorker: null
     }
   ]
 };

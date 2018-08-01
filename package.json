@@ -17,9 +17,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "^0.10.0",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@stencil/core": "^0.11.0",
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2"
   },
   "repository": {
     "type": "git",
