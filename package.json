@@ -11,15 +11,21 @@
   ],
   "scripts": {
     "build": "stencil build",
+    "build:dev": "stencil build --dev",
+    "serve": "stencil-dev-server",
     "start": "stencil build --dev --watch --serve",
-    "test": "jest",
-    "test.watch": "jest --watch"
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@stencil/dev-server": "^0.0.18",
+    "@stencil/utils": "^0.0.4"
+  },
   "devDependencies": {
-    "@stencil/core": "^0.11.0",
-    "@types/jest": "^23.3.1",
-    "jest": "^23.4.2"
+    "@stencil/core": "^0.12.4",
+    "@types/jest": "^23.3.2",
+    "jest": "^23.5.0",
+    "vinyl-file": "^3.0.0"
   },
   "repository": {
     "type": "git",
@@ -35,13 +41,22 @@
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
       "js",
       "json",
       "jsx"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "/dist/",
+      "/node_modules/",
+      "/www/",
+      "/bit/"
     ]
   }
 }

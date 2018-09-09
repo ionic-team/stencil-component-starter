@@ -1,0 +1,9 @@
+{
+    "env": {
+        "compiler": "tbarak.test/compilers/stencil@0.0.1",
+        "tester": "bit.envs/testers/jest@0.0.32"
+    },
+    "dependencies": {},
+    "componentsDefaultDirectory": "components/{namespace}/{name}",
+    "packageManager": "npm"
+}
