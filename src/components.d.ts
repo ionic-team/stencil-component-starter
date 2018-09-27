@@ -15,10 +15,12 @@ export namespace Components {
   interface MyComponent {
     'first': string;
     'last': string;
+    'middle': string;
   }
   interface MyComponentAttributes extends StencilHTMLAttributes {
     'first'?: string;
     'last'?: string;
+    'middle'?: string;
   }
 }
 
