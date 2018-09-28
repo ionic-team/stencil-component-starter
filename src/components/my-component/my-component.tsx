@@ -12,17 +12,13 @@ export class MyComponent {
 
   format(): string {
     return (
-      this.first +
+      (this.first || '') +
       (this.middle ? ` ${this.middle}` : '') +
       (this.last ? ` ${this.last}` : '')
     );
   }
 
   render() {
-    return (
-      <div>
-        Hello, World! I'm {this.format()}
-      </div>
-    );
+    return <div>Hello, World! I'm {this.format()}</div>;
   }
 }
