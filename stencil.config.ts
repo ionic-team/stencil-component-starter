@@ -3,12 +3,11 @@ import { Config } from '@stencil/core';
 export const config: Config = {
   namespace: 'mycomponent',
   outputTargets:[
-    {
-      type: 'dist'
-    },
+    { type: 'dist' },
+    { type: 'docs' },
     {
       type: 'www',
-      serviceWorker: null
+      serviceWorker: null // disable service workers
     }
   ]
 };
