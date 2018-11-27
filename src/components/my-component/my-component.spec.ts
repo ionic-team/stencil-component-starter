@@ -8,20 +8,20 @@ describe('my-component', () => {
   describe('formatting', () => {
     it('returns empty string for no names defined', () => {
       const component = new MyComponent();
-      expect(component.format()).toEqual('');
+      expect(component.getText()).toEqual('');
     });
 
     it('formats just first names', () => {
       const component = new MyComponent();
       component.first = 'Joseph';
-      expect(component.format()).toEqual('Joseph');
+      expect(component.getText()).toEqual('Joseph');
     });
 
     it('formats first and last names', () => {
       const component = new MyComponent();
       component.first = 'Joseph';
       component.last = 'Publique';
-      expect(component.format()).toEqual('Joseph Publique');
+      expect(component.getText()).toEqual('Joseph Publique');
     });
 
     it('formats first, middle and last names', () => {
@@ -29,7 +29,7 @@ describe('my-component', () => {
       component.first = 'Joseph';
       component.middle = 'Quincy';
       component.last = 'Publique';
-      expect(component.format()).toEqual('Joseph Quincy Publique');
+      expect(component.getText()).toEqual('Joseph Quincy Publique');
     });
   });
 });
