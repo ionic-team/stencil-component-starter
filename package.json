@@ -1,5 +1,5 @@
 {
-  "name": "___PROJECT_NAME___",
+  "name": "stencil-starter-project-name",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
@@ -18,7 +18,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.15.2"
+    "@stencil/core": "~0.16.2"
   },
   "license": "MIT"
 }
