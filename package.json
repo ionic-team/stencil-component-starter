@@ -9,8 +9,10 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
   "files": [
-    "dist/"
+    "dist/",
+    "loader/"
   ],
   "scripts": {
     "build": "stencil build --docs",
@@ -19,7 +21,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
-    "@stencil/core": "one"
+    "@stencil/core": "1.0.0-beta.5"
   },
   "license": "MIT"
 }
