@@ -25,8 +25,21 @@ export namespace Components {
   }
 }
 
+declare global {
+
+
+  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
+  var HTMLMyComponentElement: {
+    prototype: HTMLMyComponentElement;
+    new (): HTMLMyComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'my-component': HTMLMyComponentElement;
+  }
+}
+
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes {
+  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
     */
@@ -55,21 +68,4 @@ declare module "@stencil/core" {
   }
 }
 
-
-declare global {
-
-
-
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
-
-  interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
-  }
-
-  interface ElementTagNameMap extends HTMLElementTagNameMap {}
-}
 
