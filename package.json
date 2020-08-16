@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/custom-elements/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
@@ -21,7 +21,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
-  "devDependencies": {
+  "dependencies": {
     "@stencil/core": "^1.17.3"
   },
   "license": "MIT"
