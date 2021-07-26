@@ -25,6 +25,8 @@
     "@stencil/core": "^2.0.1"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/puppeteer": "^5.4.4",
     "jest": "^27.0.6"
   },
   "license": "MIT"
