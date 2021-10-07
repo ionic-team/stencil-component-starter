@@ -10,6 +10,9 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.esm.js",
+  "stencil": {
+    "assetsRoot": "dist/stencil-starter-project-name/assets"
+  },
   "files": [
     "dist/",
     "loader/"
