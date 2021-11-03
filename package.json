@@ -10,6 +10,10 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
   "files": [
     "dist/",
     "loader/"
