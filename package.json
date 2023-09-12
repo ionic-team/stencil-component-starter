@@ -33,7 +33,7 @@
     "@types/node": "^16.18.11",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
-    "puppeteer": "^21.0.3"
+    "puppeteer": "21.1.1"
   },
   "license": "MIT"
 }
