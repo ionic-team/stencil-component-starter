@@ -93,8 +93,7 @@ To export Stencil components as standalone components make sure you have the [`d
 For example, given you'd like to use `<my-component />` as part of a React component, you can import the component directly via:
 
 ```tsx
-import { defineCustomElement } from 'foobar-design-system/dist/components/my-component.js';
-defineCustomElement();
+import 'foobar-design-system/dist/components/my-component.js';
 
 function App() {
   return (
@@ -112,4 +111,4 @@ function App() {
 export default App;
 ```
 
-Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-b6zuds?file=src%2FApp.tsx).
+Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-b6zuds?file=src%2FApp.tsx). You can shorten the import path by providing a custom `exports` map in your `package.json`.
