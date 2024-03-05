@@ -53,11 +53,11 @@ Instead, use a prefix that fits your company or any name for a group of related 
 
 ## Using this component
 
-There are 2 strategies we recommend for using web components built with Stencil.
+There are two strategies we recommend for using web components built with Stencil.
 
 The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
-You can read more about these different approaches in the [Stencil docs](tbd).
+You can read more about these different approaches in the [Stencil docs](https://stenciljs.com/docs/publishing).
 
 ### Lazy Loading
 
@@ -93,7 +93,7 @@ To export Stencil components as standalone components make sure you have the [`d
 For example, given you'd like to use `<my-component />` as part of a React component, you can import the component directly via:
 
 ```tsx
-import 'foobar-design-system/dist/components/my-component.js';
+import 'foobar-design-system/my-component';
 
 function App() {
   return (
@@ -111,4 +111,4 @@ function App() {
 export default App;
 ```
 
-Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-b6zuds?file=src%2FApp.tsx). You can shorten the import path by providing a custom `exports` map in your `package.json`.
+Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-b6zuds?file=src%2FApp.tsx).
