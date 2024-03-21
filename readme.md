@@ -86,7 +86,7 @@ Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-y6v26a?file=s
 
 ### Standalone
 
-If you are using Stencil components as part of a separate compiler that handles bundling and tree-shaking for you, we recommend importing Stencil components individually in those files where they are needed.
+If you are using a Stencil component library with `dist-custom-elements`, we recommend importing Stencil components individually in those files where they are needed.
 
 To export Stencil components as standalone components make sure you have the [`dist-custom-elements`](https://stenciljs.com/docs/custom-elements) output target defined in your `stencil.config.ts`.
 
