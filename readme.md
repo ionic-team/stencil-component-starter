@@ -55,7 +55,7 @@ Instead, use a prefix that fits your company or any name for a group of related 
 
 There are two strategies we recommend for using web components built with Stencil.
 
-The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
+The first step for all two of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
 You can read more about these different approaches in the [Stencil docs](https://stenciljs.com/docs/publishing).
 
