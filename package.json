@@ -15,7 +15,7 @@
     },
     "./my-component": {
       "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.js"
+      "types": "./dist/components/my-component.d.ts"
     }
   },
   "repository": {
