@@ -9,4 +9,4 @@
  */
 
 export { format } from './utils/utils';
-export * from './components';
+export type * from './components.d.ts';
