@@ -21,6 +21,6 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: "shell",
   },
 };
